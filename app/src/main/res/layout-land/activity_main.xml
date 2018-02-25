@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90000000"
+    tools:context="com.example.jdachuk.gl_task.MainActivity">
+
+    <TextView
+        android:id="@+id/alarm_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/lock_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/lock_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/unlock_btn"/>
+
+    <Button
+        android:id="@+id/unlock_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/unlock_btn"
+        app:layout_constraintStart_toEndOf="@id/lock_btn"
+        app:layout_constraintTop_toTopOf="@id/lock_btn"
+        app:layout_constraintEnd_toStartOf="@id/lock_x2_btn"/>
+
+    <Button
+        android:id="@+id/lock_x2_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/lock_x2_btn"
+        app:layout_constraintStart_toEndOf="@+id/unlock_btn"
+        app:layout_constraintTop_toTopOf="@+id/unlock_btn"
+        app:layout_constraintEnd_toStartOf="@id/unlock_x2_btn"/>
+
+    <Button
+        android:id="@+id/unlock_x2_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/unlock_x2_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lock_x2_btn"
+        app:layout_constraintTop_toTopOf="@+id/lock_x2_btn" />
+
+</android.support.constraint.ConstraintLayout>

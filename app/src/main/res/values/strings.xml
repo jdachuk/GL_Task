@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GL_Task</string>
+    <string name="all_unlocked">All doors unlocked!</string>
+    <string name="all_locked">All doors locked!</string>
+    <string name="driver_unlocked">Driver door unlocked,\n passenger doors locked!</string>
+    <string name="lock_btn">Lock</string>
+    <string name="unlock_btn">Unlock</string>
+    <string name="lock_x2_btn">Lock x2</string>
+    <string name="unlock_x2_btn">Unlock x2</string>
+</resources>
